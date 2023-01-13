@@ -26,8 +26,9 @@ pub fn parse_request_options(options: HashMap<&str, &str>) -> Result<Request> {
                 let headers = value.split(",").collect::<Vec<&str>>();
                 for header in headers {
                     let header = header.split(":").collect::<Vec<&str>>();
+                    println!("{:?}", header[0]);
                     request.headers.insert(
-                        HeaderName::from_bytes(header[0].as_bytes())
+                        HeaderName::from_bytes(header[0].trim_start().as_bytes())
                             .context("Invalid Header name")?,
                         HeaderValue::from_bytes(header[1].as_bytes())
                             .context("Invalid Header value")?,

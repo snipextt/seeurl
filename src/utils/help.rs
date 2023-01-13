@@ -4,7 +4,7 @@ pub fn print_help() {
     println!("Options:");
     println!("  -h, --help\t\tPrint this help message");
     println!("  -v, --version\t\tPrint version");
-    println!("  -v, --verbose\t\tEnable verbose mode");
+    println!("  -V, --verbose\t\tEnable verbose mode");
     println!("  -H, --headers\t\tSpecify request headers");
     println!("  -o, --output\t\tSpecify output file");
     println!("  -t, --timeout\t\tSpecify request timeout");

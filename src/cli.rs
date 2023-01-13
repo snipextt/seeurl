@@ -26,7 +26,7 @@ pub fn read_args() -> Result<()> {
             panic!("Error: Missing value for option {}", arg);
         }
         match arg.as_str() {
-            "-v" | "--verbose" => options_map.insert("verbose", "true"),
+            "-V" | "--verbose" => options_map.insert("verbose", "true"),
             "-H" | "--headers" => options_map.insert("headers", &args[i + 1]),
             "-o" | "--output" => options_map.insert("output", &args[i + 1]),
             "-t" | "--timeout" => options_map.insert("timeout", &args[i + 1]),
