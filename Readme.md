@@ -1,7 +1,7 @@
 # Seeurl
 
 
-A cli written in rust to work browse URLs. 
+A cli written in rust to browse URLs. 
 
 ## Usage
 
